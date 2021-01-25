@@ -4,14 +4,8 @@
 
 **String Class**: Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 
-| No. | Methods                         | Description |
-| --- | ------------------------------- | ----------- |
-| 1   | **Char** `s1.charAt(int index)` |             |
-| 2   |                                 |             |
-| 3   | java                            |             |
-
-char s1.charAt(int index)
-
-```java
-set(int index, E element)
-```
+| No. | Methods                     | Description                                 |
+| --- | --------------------------- | ------------------------------------------- |
+| 1   | 'Char s1.charAt(int index)` | returns char value for the particular index |
+| 2   | int s1.length()             | returns string length                       |
+| 3   | java                        |                                             |
