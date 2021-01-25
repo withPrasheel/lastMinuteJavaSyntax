@@ -2,9 +2,7 @@
 
 ## Important Syntax in java
 
-### **String Class**
-
-: Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
+**String Class**: Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 
 | Command                                  | Description                                        |
 | ---------------------------------------- | -------------------------------------------------- |
