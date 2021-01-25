@@ -8,12 +8,10 @@
 | --- | ------------------------------- | ----------- |
 | 1   | **Char** `s1.charAt(int index)` |             |
 | 2   |                                 |             |
-| 3   | ```java                         |
+| 3   | java                            |             |
 
 char s1.charAt(int index)
-
-````| |
 
 ```java
-char s1.charAt(int index)
-````
+set(int index, E element)
+```
