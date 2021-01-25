@@ -6,6 +6,6 @@
 | `git diff`                               | Show file differences that **haven't been** staged |
 | `<span>char s1.charAt(int index)</span>` |
 
-```html
-<span>char s1.charAt(int index)</span>
+```java
+char s1.charAt(int index)
 ```
