@@ -1,5 +1,9 @@
 # lastMinuteJavaSyntax
 
+## Important Syntax in java
+
+### **String Class**
+
 | Command                                  | Description                                        |
 | ---------------------------------------- | -------------------------------------------------- |
 | `git status`                             | List all _new or modified_ files                   |
@@ -7,5 +11,5 @@
 | `<span>char s1.charAt(int index)</span>` |
 
 ```java
-char s1.charAt(int index)
+Char s1.charAt(int index)
 ```
