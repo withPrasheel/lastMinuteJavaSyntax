@@ -128,3 +128,10 @@ Syntax: LinkedList<E> x =new LinkedList<E>();
 | 11  | `boolean x.offer(E e)`                         | adds the specified element as the last element of a list.                                                                                                           |
 | 12  | `E x.peek()`                                   | retrieves the first element of a list                                                                                                                               |
 |     | `E x.poll()`                                   | It retrieves and removes the first element of a list.                                                                                                               |
+| 13  | `int x.size()`                                 | used to return the number of elements in a list.                                                                                                                    |
+| 14  | `E x.set(int index, E element)`                | It replaces the element at the specified position in a list with the specified element.                                                                             |
+| 15  | `E x.remove(int index)`                        | used to remove the element at the specified position in a list.                                                                                                     |
+
+### Map
+
+![Alt text](./java-map-hierarchy.png "Title")
