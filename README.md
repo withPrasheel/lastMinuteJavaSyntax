@@ -51,7 +51,6 @@ If the return type is of the type same as an argument then we are using _var_
 | 13  | `double Math.exp(double x) `                                    | returns E raised to the power of a double value                                                                |
 | 14  | `double Math.sin/cos/tan/asin/acos/atan(double a)`              | return the trigonometric value.                                                                                |
 | 15  | `double sinh/tanh/cosh(double x) `                              | return the trigonometric Hyperbolic value.                                                                     |
-| 16  | ``                                                              |
 
 ### Integer Class
 
@@ -80,3 +79,52 @@ If the return type is of the type same as an argument then we are using _var_
 |     | `Integer Integer.valueOf(String s, int radix)`                                | convert to int and chnages be base from radix to 10.                                                                                                       |
 
 \*valueOf is present in both Integer and String, Integer.valueOf() give Integer and String.valueOf() gives String
+
+### ArrayList
+
+Syntax: ArrayList <E> x = new ArrayList<E>();
+
+| No. | Methods                                          | Description                                                                                                                                                         |
+| --- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | `int x.size()`                                   | returns length of an ArrayList                                                                                                                                      |
+| 2   | `void x.add(int index, E element)`               | used to insert the specified element at the specified position in a list.                                                                                           |
+| 3   | `boolean x.add(E e)`                             | used to append the specified element at the end of a list.                                                                                                          |
+| 4   | `boolean x.addAll(Collection c) `                | used to append all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
+| 5   | `boolean x.addAll(int index, Collection c)`      | used to append all the elements in the specified collection, starting at the specified position of the list.                                                        |
+| 6   | `void x.clear()`                                 | used to remove all of the elements from this list.                                                                                                                  |
+| 7   | `E x.get(int index)`                             | used to fetch the element from the particular position of the list.                                                                                                 |
+| 8   | `boolean x.isEmpty()`                            | returns true if the list is empty, otherwise false.                                                                                                                 |
+| 9   | `Object[] x.toArray()`                           | used to return an array containing all of the elements in this list in the correct order.                                                                           |
+| 10  | `Object x.clone()`                               | used to return a shallow copy of an ArrayList.                                                                                                                      |
+| 11  | `boolean x.contains(Object o)`                   | returns true if the list contains the specified element                                                                                                             |
+| 12  | `int x.indexOf(Object o)`                        | used to return the index in this list of the first occurrence of the specified element, or -1 if the List does not contain this element.                            |
+| 13  | `E x.remove(int index)`                          | to remove the element present at the specified position in the list.                                                                                                |
+| 14  | `boolean x.remove(Object o)`                     | used to remove the first occurrence of the specified element.                                                                                                       |
+|     | `boolean x.removeAll(Collection c)`              | used to remove all the elements from the list.                                                                                                                      |
+| 15  | `void x.removeRange(int fromIndex, int toIndex)` | to remove all the elements lies within the given range.                                                                                                             |
+| 16  | `E x.set(int index, E element)`                  | used to replace the specified element in the list, present at the specified position.                                                                               |
+| 17  | `void x.sort(Comparator<? super E> c)`           | used to sort the elements of the list on the basis of specified comparator.                                                                                         |
+| 18  | `List<E> subList(int fromIndex, int toIndex)`    | used to fetch all the elements lies within the given range.                                                                                                         |
+
+### LinkedList
+
+Syntax: LinkedList<E> x =new LinkedList<E>();  
+ E: data type
+
+| No. | Methods                                        | Description                                                                                                                                                         |
+| --- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | `boolean x.add(E e)`                           | to append the specified element to the end of a list.                                                                                                               |
+| 2   | `void x.add(int index, E element)`             | to insert the specified element at the specified position index in a list.                                                                                          |
+| 3   | `boolean x.addAll(Collection <E> c)`           | used to append all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
+|     | `boolean x.addAll(int index, Collection<E> c)` | used to append all the elements in the specified collection, starting at the specified position of the list.                                                        |
+| 4   | `void x.addFirst(E e)`                         | used to insert the given element at the beginning of a list.                                                                                                        |
+|     | `void x.addLast(E e)`                          | used to append the given element to the end of a list.                                                                                                              |
+| 5   | `void x.clear()`                               | used to remove all the elements from a list.                                                                                                                        |
+| 6   | `Object x.clone()`                             | used to return a shallow copy of an ArrayList.                                                                                                                      |
+| 7   | `boolean x.contains(Object o)`                 | used to return true if a list contains a specified element.                                                                                                         |
+| 8   | `E x.element()`                                | used to retrieve the first element of a list.                                                                                                                       |
+| 9   | `E x.get(int index)`                           | used to return the element at the specified position in a list.                                                                                                     |
+| 10  | `int x.indexOf(Object o)`                      | used to return the index in a list of the first occurrence of the specified element, or -1 if the list does not contain any element.                                |
+| 11  | `boolean x.offer(E e)`                         | adds the specified element as the last element of a list.                                                                                                           |
+| 12  | `E x.peek()`                                   | retrieves the first element of a list                                                                                                                               |
+|     | `E x.poll()`                                   | It retrieves and removes the first element of a list.                                                                                                               |
