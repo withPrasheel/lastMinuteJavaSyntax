@@ -135,3 +135,41 @@ Syntax: LinkedList<E> x =new LinkedList<E>();
 ### Map
 
 ![Alt text](./java-map-hierarchy.png "Title")
+
+Map<K,V> m=new HashMap<K,V>();
+
+| No. | Methods                                      | Description                                                                                           |
+| --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | `void m.put(Object key, Object value)`       | used to insert an entry in the map.                                                                   |
+| 2   | `void m.putAll(Map map)`                     | used to insert the specified map in the map.                                                          |
+| 3   | `void m.putIfAbsent(K key, V value)`         | It inserts the specified value with the specified key in the map only if it is not already specified. |
+| 4   | `void m.remove(Object key)`                  | used to delete an entry for the specified key.                                                        |
+| 5   | `boolean m.remove(Object key, Object value)` | It removes the specified values with the associated specified keys from the map.                      |
+| 6   | `void m.clear()`                             | used to reset the map.                                                                                |
+| 7   | `boolean m.containsValue(Object value)`      | This method returns true if some value equal to the value exists within the map, else return false.   |
+|     | `boolean containsKey(Object key)`            | This method returns true if some key equal to the key exists within the map, else return false.       |
+| 8   | `boolean equals(Object o)`                   | used to compare the specified Object with the Map.                                                    |
+| 9   | `V m.get(Object key)`                        | This method returns the object that contains the value associated with the key else returns null      |
+| 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
+| 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
+
+keyset missing
+Map.Entry
+
+### Queue
+
+Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object.
+
+Syntax:
+Queue<E> pQueue = new PriorityQueue<E>();
+Queue<E> lQueue = new LinkedList<E>();
+Queue<E> pbq = new PriorityBlockingQueue<E>();
+
+| No. | Methods                   | Description                                                                                                                                                                                                        |
+| --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | `boolean q.add(object) `  | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
+|     | `boolean q.offer(object)` | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
+| 2   | `Object q.peek()`         | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
+|     | `Object q.element()`      | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
+| 3   | `Object q.remove()`       | This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
+|     | `Object q.poll()`         | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
