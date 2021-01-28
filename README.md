@@ -103,7 +103,8 @@ If the return type is of the type same as an argument then we are using _var_
 
 ### Iterator
 
-Syntax : Iterator i = Collection.iterator();
+Syntax :
+Iterator i = Collection.iterator();
 
 | No. | Methods               | Description                                                                       |
 | --- | --------------------- | --------------------------------------------------------------------------------- |
