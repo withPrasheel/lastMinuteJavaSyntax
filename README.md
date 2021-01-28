@@ -82,6 +82,8 @@ If the return type is of the type same as an argument then we are using _var_
 
 ### Collections
 
+![Alt text](./Java-Collections-Hierarchy.png "Title")
+
 ```java
 Collection<E> P = new "some type"<E>();
 Collection<E> Q = new "some type"<E>();
@@ -117,7 +119,7 @@ Iterator i = Collection.iterator();
 | 2   | `Object i.next()`     | returns the next element in the collection until the hasNext()method return true. |
 | 3   | `void i.remove()`     | removes the current element in the collection.                                    |
 
-### List
+### ListItrator
 
 ‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
 
@@ -220,8 +222,8 @@ Map<K,V> m=new HashMap<K,V>();
 | 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
 | 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
 
-keyset missing
-Map.Entry
+<keyset missing
+Map.Entry>
 
 ### Queue
 
