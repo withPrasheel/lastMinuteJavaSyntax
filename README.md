@@ -184,8 +184,9 @@ E: data type
 
 ![Alt text](./java-map-hierarchy.png "Title")
 
-`````java
-Map<K,V> m=new HashMap<K,V>();````
+```java
+Map<K,V> m=new HashMap<K,V>();
+```
 
 | No. | Methods                                      | Description                                                                                           |
 | --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -214,7 +215,8 @@ Syntax:
 ````java
 Queue<E> pQueue = new PriorityQueue<E>();
 Queue<E> lQueue = new LinkedList<E>();
-Queue<E> pbq = new PriorityBlockingQueue<E>();```
+Queue<E> pbq = new PriorityBlockingQueue<E>();
+```
 
 | No. | Methods                   | Description                                                                                                                                                                                                        |
 | --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -224,4 +226,4 @@ Queue<E> pbq = new PriorityBlockingQueue<E>();```
 |     | `Object q.element()`      | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
 | 3   | `Object q.remove()`       | This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
 |     | `Object q.poll()`         | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
-`````
+````
