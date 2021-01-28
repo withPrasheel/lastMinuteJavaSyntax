@@ -80,6 +80,52 @@ If the return type is of the type same as an argument then we are using _var_
 
 \*valueOf is present in both Integer and String, Integer.valueOf() give Integer and String.valueOf() gives String
 
+### Collections
+
+        Collection<E> P = new "some type"<E>();
+        Collection<E> Q = new "some type"<E>();
+
+| No. | Methods                              | Description                                                                                                                                                                                                              |
+| --- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | `boolean P.add(E element)`           | This method is used to add an object to the collection.                                                                                                                                                                  |
+| 2   | `boolean P.addAll(Q);`               | This method adds all the elements in the given collection to this collection.                                                                                                                                            |
+| 3   | `P.clear()`                          | used to clear the Collection upon                                                                                                                                                                                        |
+| 4   | `boolean P.contains(Object element)` | returns true if the collection contains the specified element.                                                                                                                                                           |
+| 5   | `boolean P.containsAll(Q)`           | returns true if the collection contains all of the elements in the given collection.                                                                                                                                     |
+| 6   | `boolean P.equals(Q)`                | This method compares the specified object with this collection for equality.                                                                                                                                             |
+| 7   | `int P.hashCode()`                   | return the hash code value for this collection.                                                                                                                                                                          |
+| 8   | `boolean P.isEmpty()`                | This method returns true if this collection contains no elements.                                                                                                                                                        |
+| 9   | `Collections.max(P)`                 | used to return the maximum element of the given collection, according to the natural ordering of its elements. All elements in the collection must implement the Comparable interface.                                   |
+| 10  | `E P.remove(Object o)`               | This method is used to remove the given object from the collection. If there are duplicate values, then this method removes the first occurrence of the object.                                                          |
+| 11  | `E P.removeAll(Q)`                   | This method is used to remove all the objects mentioned in the given collection from the collection.                                                                                                                     |
+| 12  | `int P.size()`                       | This method is used to return the number of elements in the collection.                                                                                                                                                  |
+| 13  | `Object[] objects = P.toArray();`    | This method is used to return an array containing all of the elements in this collection. toArray() method returns an array of type Object(Object[]). We need to typecast it to Integer before using as Integer objects. |
+
+### Iterator
+
+Syntax : Iterator i = Collection.iterator();
+
+| No. | Methods               | Description                                                                       |
+| --- | --------------------- | --------------------------------------------------------------------------------- |
+| 1   | `boolean i.hasNext()` | returns true if Iterator has more element to iterate.                             |
+| 2   | `Object i.next()`     | returns the next element in the collection until the hasNext()method return true. |
+| 3   | `void i.remove()`     | removes the current element in the collection.                                    |
+
+### List
+
+‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
+
+Syntax: ListIterator li = list.listIterator();
+
+| No. | Methods                      | Description                                                                                |
+| --- | ---------------------------- | ------------------------------------------------------------------------------------------ |
+| 1   | `void li.add(Object object)` | It inserts object immediately before the element that is returned by the next( ) function. |
+| 2   | `boolean li.hasNext( )`      | returns true if the list has a next element.                                               |
+| 3   | `boolean li.hasPrevious( ):` | returns true if the list has a previous element.                                           |
+| 4   | `Object li.next( )`          | returns the next element of the list.                                                      |
+| 5   | `Object li.previous( )`      | returns the previous element of the list.                                                  |
+| 6   | `void li.remove( )`          | removes the current element from the list.                                                 |
+
 ### ArrayList
 
 Syntax: ArrayList <E> x = new ArrayList<E>();
