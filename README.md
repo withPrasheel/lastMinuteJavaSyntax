@@ -104,7 +104,8 @@ If the return type is of the type same as an argument then we are using _var_
 ### Iterator
 
 Syntax :
-Iterator i = Collection.iterator();
+
+`Iterator i = Collection.iterator();`
 
 | No. | Methods               | Description                                                                       |
 | --- | --------------------- | --------------------------------------------------------------------------------- |
@@ -116,7 +117,7 @@ Iterator i = Collection.iterator();
 
 ‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
 
-Syntax: ListIterator li = list.listIterator();
+`Syntax: ListIterator li = list.listIterator();`
 
 | No. | Methods                      | Description                                                                                |
 | --- | ---------------------------- | ------------------------------------------------------------------------------------------ |
@@ -129,7 +130,7 @@ Syntax: ListIterator li = list.listIterator();
 
 ### ArrayList
 
-Syntax: ArrayList <E> x = new ArrayList<E>();
+Syntax: `ArrayList <E> x = new ArrayList<E>();`
 
 | No. | Methods                                          | Description                                                                                                                                                         |
 | --- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -155,8 +156,8 @@ Syntax: ArrayList <E> x = new ArrayList<E>();
 
 ### LinkedList
 
-Syntax: LinkedList<E> x =new LinkedList<E>();  
- E: data type
+Syntax: `LinkedList<E> x =new LinkedList<E>(); `
+E: data type
 
 | No. | Methods                                        | Description                                                                                                                                                         |
 | --- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -183,7 +184,7 @@ Syntax: LinkedList<E> x =new LinkedList<E>();
 
 ![Alt text](./java-map-hierarchy.png "Title")
 
-Map<K,V> m=new HashMap<K,V>();
+`Map<K,V> m=new HashMap<K,V>();`
 
 | No. | Methods                                      | Description                                                                                           |
 | --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
