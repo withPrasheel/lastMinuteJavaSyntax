@@ -82,8 +82,10 @@ If the return type is of the type same as an argument then we are using _var_
 
 ### Collections
 
-        Collection<E> P = new "some type"<E>();
-        Collection<E> Q = new "some type"<E>();
+```java
+Collection<E> P = new "some type"<E>();
+Collection<E> Q = new "some type"<E>();
+```
 
 | No. | Methods                              | Description                                                                                                                                                                                                              |
 | --- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -105,7 +107,9 @@ If the return type is of the type same as an argument then we are using _var_
 
 Syntax :
 
-`Iterator i = Collection.iterator();`
+```java
+Iterator i = Collection.iterator();
+```
 
 | No. | Methods               | Description                                                                       |
 | --- | --------------------- | --------------------------------------------------------------------------------- |
@@ -117,7 +121,11 @@ Syntax :
 
 ‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
 
-`Syntax: ListIterator li = list.listIterator();`
+Syntax:
+
+```java
+ListIterator li = list.listIterator();
+```
 
 | No. | Methods                      | Description                                                                                |
 | --- | ---------------------------- | ------------------------------------------------------------------------------------------ |
@@ -130,7 +138,11 @@ Syntax :
 
 ### ArrayList
 
-Syntax: `ArrayList <E> x = new ArrayList<E>();`
+Syntax:
+
+```java
+ArrayList <E> x = new ArrayList<E>();
+```
 
 | No. | Methods                                          | Description                                                                                                                                                         |
 | --- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -156,7 +168,12 @@ Syntax: `ArrayList <E> x = new ArrayList<E>();`
 
 ### LinkedList
 
-Syntax: `LinkedList<E> x =new LinkedList<E>(); `
+Syntax:
+
+```java
+LinkedList<E> x =new LinkedList<E>();
+```
+
 E: data type
 
 | No. | Methods                                        | Description                                                                                                                                                         |
