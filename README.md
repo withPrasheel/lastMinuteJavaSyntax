@@ -9,7 +9,7 @@ Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 | No. | Methods                                                 | Description                                                                  |
 | --- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | 1   | `char s1.charAt(int index)`                             | returns char value for the particular index                                  |
-| 2   | `int s1.length()`                                       | returns string length                                                        |
+| 2   | `int s1.length()`                                       | O(1) returns string length                                                        |
 | 3   | `String s1.substring(int beginIndex)`                   | returns substring for given begin index.                                     |
 |     | `String s1.substring(int beginIndex, int endIndex)`     | returns substring for given begin index(inclusive) and end index(exclusive). |
 | 4   | `boolean s1.contains(CharSequence s)`                   | returns true or false after matching the sequence of char value.             |
