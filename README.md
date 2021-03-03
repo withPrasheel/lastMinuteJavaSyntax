@@ -207,6 +207,7 @@ E: data type
 Map<K,V> m=new HashMap<K,V>();
 ```
 
+
 | No. | Methods                                      | Description                                                                                           |
 | --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
 | 1   | `void m.put(Object key, Object value)`       | used to insert an entry in the map.                                                                   |
@@ -222,8 +223,16 @@ Map<K,V> m=new HashMap<K,V>();
 | 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
 | 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
 
-<keyset missing
-Map.Entry>
+Map.Entry
+```java
+for(Map.Entry<Integer, Integer> entry : counts.entrySet()) { 
+entry.getValue(); 
+entry.getKey();
+}
+```
+<keyset missing>
+
+  
 
 ### Queue
 
