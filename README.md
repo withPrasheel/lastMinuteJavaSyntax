@@ -225,7 +225,7 @@ Map<K,V> m=new HashMap<K,V>();
 
 Map.Entry
 ```java
-for(Map.Entry<Integer, Integer> entry : counts.entrySet()) { 
+for(Map.Entry<Integer, Integer> map : counts.entrySet()) { 
     entry.getValue(); 
     entry.getKey();
 }
