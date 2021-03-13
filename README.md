@@ -1,6 +1,7 @@
 # lastMinuteJavaSyntax
 
 ## Important Syntax in java
+Most of the sites these days allow 10^8 operations per second
 
 ### String Class
 
