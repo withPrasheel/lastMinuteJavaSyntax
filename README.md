@@ -235,23 +235,29 @@ for(Map.Entry<Integer, Integer> map : counts.entrySet()) {
 
   
 
-### Queue
+### [Queue](https://www.geeksforgeeks.org/queue-interface-java/)
 
 Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object.
 
 Syntax:
 
 ```java
-Queue<E> pQueue = new PriorityQueue<E>();
-Queue<E> lQueue = new LinkedList<E>();
-Queue<E> pbq = new PriorityBlockingQueue<E>();
+Normal queue:    Queue<E> lQueue = new LinkedList<E>();
+
+Priority Queue:  Queue<E> pQueue = new PriorityQueue<E>();
+                 Queue<E> pbq = new PriorityBlockingQueue<E>();
+```
+To declare a [Priority queue](http://www.learn4master.com/algorithms/java-priorityqueue-example) which returns maximum value using MaxHeap
+```java
+Queue<E> queue = new PriorityQueue(int initialCapacity, Comparator<? super E> comparator);
+PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrder());
 ```
 
-| No. | Methods                   | Description                                                                                                                                                                                                        |
-| --- | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | `boolean q.add(object) `  | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
-|     | `boolean q.offer(object)` | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
-| 2   | `Object q.peek()`         | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
-|     | `Object q.element()`      | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
-| 3   | `Object q.remove()`       | This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
-|     | `Object q.poll()`         | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
+| No. | Methods                   | TC | Description                                                                                                                                                                                                        |
+| --- | ------------------------- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | `boolean q.add(object) ` | O(n) | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
+|     | `boolean q.offer(object)` | O(n) | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
+| 2   | `Object q.peek()`         | O(n) | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
+|     | `Object q.element()`      | O(n) | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
+| 3   | `Object q.remove()`        | O(n) | This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
+|     | `Object q.poll()`          | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
