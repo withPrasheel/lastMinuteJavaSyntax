@@ -3,7 +3,7 @@
 ## Important Syntax in java
 Most of the sites these days allow 10^8 operations per second
 
-### String Class
+### [String Class](https://www.geeksforgeeks.org/string-class-in-java/)
 
 Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 
@@ -31,7 +31,9 @@ Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 | 14  | `String s1.trim()`                                      | removes the beginning and ending spaces of this string.                      |
 | 15  | `String String.valueOf(int value)`                      | converts the given type into string. It is an overloaded method.             |
 
-### Math Class
+---------------------------------------------------
+
+### [Math Class](https://www.geeksforgeeks.org/java-lang-math-class-in-java-set-1/)
 
 If the return type is of the type same as an argument then we are using _var_
 
@@ -53,7 +55,8 @@ If the return type is of the type same as an argument then we are using _var_
 | 14  | `double Math.sin/cos/tan/asin/acos/atan(double a)`              | return the trigonometric value.                                                                                |
 | 15  | `double sinh/tanh/cosh(double x) `                              | return the trigonometric Hyperbolic value.                                                                     |
 
-### Integer Class
+------------------------------------------------------------------------------
+### [Integer Class](https://www.geeksforgeeks.org/java-lang-integer-class-java/)
 
 | No. | Methods                                                                       | Description                                                                                                                                                |
 | --- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -81,6 +84,8 @@ If the return type is of the type same as an argument then we are using _var_
 
 \*valueOf is present in both Integer and String, Integer.valueOf() give Integer and String.valueOf() gives String
 
+-------------------------------------------------------------------------
+
 ### Collections
 
 ![Alt text](./Java-Collections-Hierarchy.png "Title")
@@ -106,6 +111,8 @@ Collection<E> Q = new "some type"<E>();
 | 12  | `int P.size()`                       | This method is used to return the number of elements in the collection.                                                                                                                                                  |
 | 13  | `Object[] objects = P.toArray();`    | This method is used to return an array containing all of the elements in this collection. toArray() method returns an array of type Object(Object[]). We need to typecast it to Integer before using as Integer objects. |
 
+---------------------------------------------------------
+
 ### Iterator
 
 Syntax :
@@ -120,36 +127,24 @@ Iterator i = Collection.iterator();
 | 2   | `Object i.next()`     | returns the next element in the collection until the hasNext()method return true. |
 | 3   | `void i.remove()`     | removes the current element in the collection.                                    |
 
-### ListItrator
+----------------------------------------
 
-‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
-
-Syntax:
-
-```java
-ListIterator li = list.listIterator();
-```
-
-| No. | Methods                      | Description                                                                                |
-| --- | ---------------------------- | ------------------------------------------------------------------------------------------ |
-| 1   | `void li.add(Object object)` | It inserts object immediately before the element that is returned by the next( ) function. |
-| 2   | `boolean li.hasNext( )`      | returns true if the list has a next element.                                               |
-| 3   | `boolean li.hasPrevious( ):` | returns true if the list has a previous element.                                           |
-| 4   | `Object li.next( )`          | returns the next element of the list.                                                      |
-| 5   | `Object li.previous( )`      | returns the previous element of the list.                                                  |
-| 6   | `void li.remove( )`          | removes the current element from the list.                                                 |
-
-### ArrayList
+### [List](https://www.geeksforgeeks.org/list-interface-java-examples/)
+List is an interface which is implemented by various DS such as ArrayList, Linklist etc.
 
 Syntax:
 
 ```java
-ArrayList <E> x = new ArrayList<E>();
+List <E> x = new ArrayList<E>();
+List<E> ll = new LinkedList<E>();
+List<E> s = new Stack<E>();
+List<E> v = new Vector<E>();
 ```
+
 
 | No. | Methods                                          | Description                                                                                                                                                         |
 | --- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | `int x.size()`                                   | returns length of an ArrayList                                                                                                                                      |
+| 1   | `int x.size()`                                   | returns length of an List                                                                                                                                      |
 | 2   | `void x.add(int index, E element)`               | used to insert the specified element at the specified position in a list.                                                                                           |
 | 3   | `boolean x.add(E e)`                             | used to append the specified element at the end of a list.                                                                                                          |
 | 4   | `boolean x.addAll(Collection c) `                | used to append all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
@@ -169,8 +164,14 @@ ArrayList <E> x = new ArrayList<E>();
 | 17  | `void x.sort(Comparator<? super E> c)`           | used to sort the elements of the list on the basis of specified comparator.                                                                                         |
 | 18  | `List<E> subList(int fromIndex, int toIndex)`    | used to fetch all the elements lies within the given range.                                                                                                         |
 
+List                 | Add  | Remove | Get  | Contains | Next | Data Structure
+---------------------|------|--------|------|----------|------|---------------
+ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) | Array
+LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Linked List
+
 ### LinkedList
 
+Linked list extend List and dequeue interfaces so methods of both dequeue and list will work here
 Syntax:
 
 ```java
@@ -200,12 +201,35 @@ E: data type
 | 14  | `E x.set(int index, E element)`                | It replaces the element at the specified position in a list with the specified element.                                                                             |
 | 15  | `E x.remove(int index)`                        | used to remove the element at the specified position in a list.                                                                                                     |
 
-### Map
+### ListItrator
+
+‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
+
+Syntax:
+
+```java
+ListIterator li = list.listIterator();
+```
+
+| No. | Methods                      | Description                                                                                |
+| --- | ---------------------------- | ------------------------------------------------------------------------------------------ |
+| 1   | `void li.add(Object object)` | It inserts object immediately before the element that is returned by the next( ) function. |
+| 2   | `boolean li.hasNext( )`      | returns true if the list has a next element.                                               |
+| 3   | `boolean li.hasPrevious( ):` | returns true if the list has a previous element.                                           |
+| 4   | `Object li.next( )`          | returns the next element of the list.                                                      |
+| 5   | `Object li.previous( )`      | returns the previous element of the list.                                                  |
+| 6   | `void li.remove( )`          | removes the current element from the list.                                                 |
+
+----------------------------------------------------
+
+### [Map](https://www.geeksforgeeks.org/map-interface-java-examples/)
 
 ![Alt text](./java-map-hierarchy.png "Title")
 
 ```java
 Map<K,V> m=new HashMap<K,V>();
+Map<K,V> map = new LinkedHashMap<K,V>();
+Map<String, Integer> map = new TreeMap<>();
 ```
 
 
@@ -231,7 +255,13 @@ for(Map.Entry<Integer, Integer> map : counts.entrySet()) {
     entry.getKey();
 }
 ```
-<keyset missing>
+
+|    Map                   |   Get    | ContainsKey |   Next   | Data Structure
+----------------------|----------|-------------|----------|-------------------------
+HashMap               | O(1)     |   O(1)      | O(h / n) | Hash Table
+LinkedHashMap         | O(1)     |   O(1)      | O(1)     | Hash Table + Linked List
+EnumMap               | O(1)     |   O(1)      | O(1)     | Array
+TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
    
    ---------------------------
    
@@ -241,18 +271,18 @@ Since Queue is an interface, objects cannot be created of the type queue. We alw
 Syntax
 ```java
     Set<String> hs = new HashSet<String>();
-    Set<String> lh = new LinkedHashSet<String>();
+    Set<String> lhs = new LinkedHashSet<String>();
     Set<String> ts = new TreeSet<String>();
 ```
-| No. | Methods                                      | Description                                                                                           |
-| --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1   | `boolean add(E e)` | 	It is used to add the specified element to this set if it is not already present. | 
-| 2   | `void clear()  `   |	It is used to remove all of the elements from the set. | 
-| 3   | `boolean contains(Object o)` | It is used to return true if this set contains the specified element. | 
-| 4   | `boolean isEmpty()` | 	It is used to return true if this set contains no elements. |
-| 5   | `boolean remove(Object o)` | 	It is used to remove the specified element from this set if it is p. |
-| 6   | `int size()` |	It is used to return the number of elements in the set. |
-| 7   | `Iterator<E> iterator()` |	It is used to return an iterator over the elements in this set. |
+| No. | Methods    | TC(HS) | TC(LHS) | TC(TS)                  | Description                                                                                           |
+| --- | ------------| ---- | ---- | ------------------------ | ----------------------------------------------------------------------------------------------------- |
+| 1   | `boolean add(E e)` | O(1) | O(1) | O(log n) |  	It is used to add the specified element to this set if it is not already present. | 
+| 2   | `void clear()  `   | O(1) | O(1) | O(1) |	It is used to remove all of the elements from the set. | 
+| 3   | `boolean contains(Object o)` | O(1) | O(1) | O(log n) | It is used to return true if this set contains the specified element. | 
+| 4   | `boolean isEmpty()` | O(1) | O(1) | O(1) |	It is used to return true if this set contains no elements. |
+| 5   | `boolean remove(Object o)` | O(1) | O(1) | O(log n) |	It is used to remove the specified element from this set if it is p. |
+| 6   | `int size()` | O(1) | O(1) | O(1) |	It is used to return the number of elements in the set. |
+| 7   | `Iterator<E> iterator()` | O(h/n) | O(1) | O(log n) |	It is used to return an iterator over the elements in this set. |
     
 Itrator Syntax: 
 ```java
@@ -261,6 +291,12 @@ Itrator Syntax:
    System.out.println(itr.next());  
   }  
 ```
+Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data Structure
+----------------------|----------|----------|----------|----------|------|-------------------------
+HashSet               | O(1)     | O(1)     | O(1)     | O(h/n)   | O(1) | Hash Table
+LinkedHashSet         | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Hash Table + Linked List
+EnumSet               | O(1)     | O(1)     | O(1)     | O(1)     | O(1) | Bit Vector
+TreeSet               | O(log n) | O(log n) | O(log n) | O(log n) | O(1) | Red-black tree
 
 
   ----------------------------
