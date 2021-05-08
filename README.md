@@ -179,28 +179,23 @@ LinkedList<E> x =new LinkedList<E>();
 ```
 
 E: data type
-
+## Dequeue
 | No. | Methods                                        | Description                                                                                                                                                         |
 | --- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1   | `boolean x.add(E e)`                           | to append the specified element to the end of a list.                                                                                                               |
-| 2   | `void x.add(int index, E element)`             | to insert the specified element at the specified position index in a list.                                                                                          |
-| 3   | `boolean x.addAll(Collection <E> c)`           | used to append all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
-|     | `boolean x.addAll(int index, Collection<E> c)` | used to append all the elements in the specified collection, starting at the specified position of the list.                                                        |
-| 4   | `void x.addFirst(E e)`                         | used to insert the given element at the beginning of a list.                                                                                                        |
+| 2   | `boolean x.addAll(Collection <E> c)`           | used to append all of the elements in the specified collection to the end of this list, in the order that they are returned by the specified collection's iterator. |
+| 3   | `void x.addFirst(E e)`                         | used to insert the given element at the beginning of a list.                                                                                                        |
 |     | `void x.addLast(E e)`                          | used to append the given element to the end of a list.                                                                                                              |
-| 5   | `void x.clear()`                               | used to remove all the elements from a list.                                                                                                                        |
-| 6   | `Object x.clone()`                             | used to return a shallow copy of an ArrayList.                                                                                                                      |
-| 7   | `boolean x.contains(Object o)`                 | used to return true if a list contains a specified element.                                                                                                         |
-| 8   | `E x.element()`                                | used to retrieve the first element of a list.                                                                                                                       |
-| 9   | `E x.get(int index)`                           | used to return the element at the specified position in a list.                                                                                                     |
-| 10  | `int x.indexOf(Object o)`                      | used to return the index in a list of the first occurrence of the specified element, or -1 if the list does not contain any element.                                |
-| 11  | `boolean x.offer(E e)`                         | adds the specified element as the last element of a list.                                                                                                           |
-| 12  | `E x.peek()`                                   | retrieves the first element of a list                                                                                                                               |
+| 4   | `void x.clear()`                               | used to remove all the elements from a list.                                                                                                                        |                                                                                                                      |
+| 5   | `boolean x.contains(Object o)`                 | used to return true if a list contains a specified element.                                                                                                         |
+| 6   | `E x.element()`                                | used to retrieve the first element of a list.                                                                                                                       |
+| 7  | `boolean x.offer(E e)`                         | adds the specified element as the last element of a list.                                                                                                           |
+| 8  | `E x.peek()`                                   | retrieves the first element of a list                                                                                                                               |
 |     | `E x.poll()`                                   | It retrieves and removes the first element of a list.                                                                                                               |
-| 13  | `int x.size()`                                 | used to return the number of elements in a list.                                                                                                                    |
-| 14  | `E x.set(int index, E element)`                | It replaces the element at the specified position in a list with the specified element.                                                                             |
-| 15  | `E x.remove(int index)`                        | used to remove the element at the specified position in a list.                                                                                                     |
+| 9  | `int x.size()`                                 | used to return the number of elements in a list.                                                                                                                    |                                                                             |
+| 10  | `E x.remove()`                        | used to remove the head of queuee.                                                                                                     |
 
+pollFirst, pollLast, offerFirst, offerLast, peekFirst, peekLast, removeFirst, removeLast, removeFirstOccurance, removeLastOccurance
 ### ListItrator
 
 ‘ListIterator’ in Java is an Iterator which allows users to traverse Collection in both direction.
@@ -320,7 +315,7 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrde
 ```
 
 | No. | Methods                   | TC(Q) | TC(PQ) | Description                                                                                                                                                                                                        |
-| --- | ------------------------- | --- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| --- | ------------------------- | --- | --- |----------------------------------------------------------------------------------------------------------- |
 | 1   | `boolean q.add(object) ` | O(1) | O(log n) | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
 |     | `boolean q.offer(object)` | O(1) | O(log n) | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
 | 2   | `Object q.peek()`         | O(1) | O(1) | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
