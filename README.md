@@ -293,5 +293,5 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrde
 |     | `Object q.poll()`          | O(1) | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
 
 ### Cool Resources
-1. Complete Time Complexity of Collections library - https://gist.github.com/psayre23/c30a821239f4818b0709
+1. Complete Time Complexity of Collections library - https://github.com/itsPrasheel/lastMinuteJavaSyntax/blob/master/CollectionTC.md
 2. 
