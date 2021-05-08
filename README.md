@@ -236,11 +236,30 @@ for(Map.Entry<Integer, Integer> map : counts.entrySet()) {
    ---------------------------
    
 ### [Set](https://www.geeksforgeeks.org/set-in-java/)
+Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object.
+
+Syntax
 ```java
     Set<String> hs = new HashSet<String>();
     Set<String> lh = new LinkedHashSet<String>();
     Set<String> ts = new TreeSet<String>();
+```
+| No. | Methods                                      | Description                                                                                           |
+| --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| 1   | boolean add(E e) | 	It is used to add the specified element to this set if it is not already present. | 
+| 2   | void clear()     |	It is used to remove all of the elements from the set. | 
+| 3   | boolean contains(Object o) | It is used to return true if this set contains the specified element. | 
+| 4   | boolean isEmpty() | 	It is used to return true if this set contains no elements. |
+| 5   | boolean remove(Object o) | 	It is used to remove the specified element from this set if it is p. |
+| 6   | int size() |	It is used to return the number of elements in the set. |
+| 7   | Iterator<E> iterator() |	It is used to return an iterator over the elements in this set. |
     
+Itrator Syntax: 
+```java
+ Iterator<String> itr=set.iterator();  
+  while(itr.hasNext()){  
+   System.out.println(itr.next());  
+  }  
 ```
 
 
