@@ -224,7 +224,7 @@ Map<K,V> m=new HashMap<K,V>();
 | 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
 | 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
 
-Map.Entry
+Map.Entry 
 ```java
 for(Map.Entry<Integer, Integer> map : counts.entrySet()) { 
     entry.getValue(); 
@@ -232,8 +232,19 @@ for(Map.Entry<Integer, Integer> map : counts.entrySet()) {
 }
 ```
 <keyset missing>
+   
+   ---------------------------
+   
+### [Set](https://www.geeksforgeeks.org/set-in-java/)
+```java
+    Set<String> hs = new HashSet<String>();
+    Set<String> lh = new LinkedHashSet<String>();
+    Set<String> ts = new TreeSet<String>();
+    
+```
 
-  
+
+  ----------------------------
 
 ### [Queue](https://www.geeksforgeeks.org/queue-interface-java/)
 
@@ -255,9 +266,13 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrde
 
 | No. | Methods                   | TC(Q) | TC(PQ) | Description                                                                                                                                                                                                        |
 | --- | ------------------------- | --- | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1   | `boolean q.add(object) ` | O(n) | O(log n) | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
-|     | `boolean q.offer(object)` | O(n) | O(log n) | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
-| 2   | `Object q.peek()`         | O(n) | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
-|     | `Object q.element()`      | O(n) | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
-| 3   | `Object q.remove()`        | O(n) | This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
-|     | `Object q.poll()`          | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
+| 1   | `boolean q.add(object) ` | O(1) | O(log n) | This method is used to add elements at the tail of queue. More specifically, at the last of linked-list if it is used, or according to the priority in case of priority queue implementation.                      |
+|     | `boolean q.offer(object)` | O(1) | O(log n) | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
+| 2   | `Object q.peek()`         | O(1) | O(1) | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
+|     | `Object q.element()`      | O(1) | O(1) | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
+| 3   | `Object q.remove()`        | O(1) | O(n)  |  This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
+|     | `Object q.poll()`          | O(1) | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
+
+### Cool Resources
+1. Complete Time Complexity of Collections library - https://gist.github.com/psayre23/c30a821239f4818b0709
+2. 
