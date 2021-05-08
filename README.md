@@ -135,7 +135,7 @@ List is an interface which is implemented by various DS such as ArrayList, Linkl
 Syntax:
 
 ```java
-List <E> x = new ArrayList<E>();
+List<E> x = new ArrayList<E>();
 List<E> ll = new LinkedList<E>();
 List<E> s = new Stack<E>();
 List<E> v = new Vector<E>();
