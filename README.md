@@ -229,7 +229,7 @@ ListIterator li = list.listIterator();
 ```java
 Map<K,V> m=new HashMap<K,V>();
 Map<K,V> map = new LinkedHashMap<K,V>();
-Map<String, Integer> map = new TreeMap<>();
+Map<K,V> map = new TreeMap<K,V>();
 ```
 
 
