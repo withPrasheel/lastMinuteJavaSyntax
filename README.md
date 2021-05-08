@@ -246,13 +246,13 @@ Syntax
 ```
 | No. | Methods                                      | Description                                                                                           |
 | --- | -------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| 1   | boolean add(E e) | 	It is used to add the specified element to this set if it is not already present. | 
-| 2   | void clear()     |	It is used to remove all of the elements from the set. | 
-| 3   | boolean contains(Object o) | It is used to return true if this set contains the specified element. | 
-| 4   | boolean isEmpty() | 	It is used to return true if this set contains no elements. |
-| 5   | boolean remove(Object o) | 	It is used to remove the specified element from this set if it is p. |
-| 6   | int size() |	It is used to return the number of elements in the set. |
-| 7   | Iterator<E> iterator() |	It is used to return an iterator over the elements in this set. |
+| 1   | `boolean add(E e)` | 	It is used to add the specified element to this set if it is not already present. | 
+| 2   | `void clear()  `   |	It is used to remove all of the elements from the set. | 
+| 3   | `boolean contains(Object o)` | It is used to return true if this set contains the specified element. | 
+| 4   | `boolean isEmpty()` | 	It is used to return true if this set contains no elements. |
+| 5   | `boolean remove(Object o)` | 	It is used to remove the specified element from this set if it is p. |
+| 6   | `int size()` |	It is used to return the number of elements in the set. |
+| 7   | `Iterator<E> iterator()` |	It is used to return an iterator over the elements in this set. |
     
 Itrator Syntax: 
 ```java
