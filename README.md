@@ -323,6 +323,20 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrde
 | 3   | `Object q.remove()`        | O(1) | O(n)  |  This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
 |     | `Object q.poll()`          | O(1) | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
 
+### Stack
+In Java, Stack is a class that falls under the Collection framework that extends the Vector class. It also implements interfaces List, Collection, Iterable, Cloneable, Serializable.
+```java
+    Stack<E> stk = new Stack<E>();  
+```
+| No. | Methods                   | TC | Description                                                                                                                                                                                                        |
+| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| 1  | `boolean stk.empty()`  |   | The method checks the stack is empty or not. |
+| 2  | `E stk.push(E item)` or `add(E item)` |   |  The method pushes (insert) an element onto the top of the stack.  |
+| 3  | `E stk.pop()`  |    |    The method removes an element from the top of the stack and returns the same element as the value of that function. |
+| 4  | `E stk.peek()` |   | The method looks at the top element of the stack without removing it. |
+| 5  | `int stk.search(Object o)` |  | The method searches the specified object and returns the position of the object. |
+
+
 ### Cool Resources
 1. Complete Time Complexity of Collections library - https://github.com/itsPrasheel/lastMinuteJavaSyntax/blob/master/CollectionTC.md
 2. 
