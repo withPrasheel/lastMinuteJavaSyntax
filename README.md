@@ -140,6 +140,10 @@ List<E> ll = new LinkedList<E>();
 List<E> s = new Stack<E>();
 List<E> v = new Vector<E>();
 ```
+2-D List
+```java
+ List<List<E>> arr = new ArrayList<>()   or List<List<E>> arr = new ArrayList<List<E>>()
+```
 
 
 | No. | Methods                                          | Description                                                                                                                                                         |
