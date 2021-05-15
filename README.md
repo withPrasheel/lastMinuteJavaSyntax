@@ -169,6 +169,7 @@ List                 | Add  | Remove | Get  | Contains | Next | Data Structure
 ArrayList            | O(1) |  O(n)  | O(1) |   O(n)   | O(1) | Array
 LinkedList           | O(1) |  O(1)  | O(n) |   O(n)   | O(1) | Linked List
 
+ - To initialise an ArrayList with another ArrayList we declare as `ArrayList<E> arr2 = new ArrayList<>(arr1);`
 ### LinkedList
 
 Linked list extend List and dequeue interfaces so methods of both dequeue and list will work here
