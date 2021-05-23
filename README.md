@@ -44,7 +44,14 @@ The java.lang.StringBuffer class is a thread-safe, mutable sequence of character
 | --- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
 |  1  |  `int s.length()`                                       | return the length of the string i.e. total number of characters.             |
 |  2  |  `int s.capacity()`                                     | return the current allocated capacity for a string.                          | 
-|  3  |  ``
+|  3  |  `StringBuffer s.append(String s2)`                           | is used to append the specified string with this string. The append() method is overloaded like append(char), append(boolean), append(int), append(float), append(double) etc. |
+|  4  |   `StringBuffer s.insert(int offset, String s1)`        | used to insert the specified string with this string at the specified position. The insert() method is overloaded like insert(int, char), insert(int, boolean), insert(int, int), insert(int, float), insert(int, double) etc. |
+|  5  |   `StringBuffer s.replace(int startIndex, int endIndex, String str)`   | used to replace the string from specified startIndex and endIndex. |
+|  6  | `StringBuffer s.delete(int startIndex, int endIndex)`   | startIndex - Inclusive and endIndex - Exclusive                              |
+|  7  |  `StringBuffer s.reverse()`                             | used to reverse the string.                                                  | 
+|  8  |  `char s.charAt(int index)`                             | used to return the character at the specified position.                      | 
+|  9  | `String s.substring(int beginIndex)`                    | used to return the substring from the specified beginIndex.                  | 
+|  10 | `String s.substring(int beginIndex, int endIndex)`      | used to return the substring from the specified beginIndex(inclusive) and endIndex(exclusive). |
 
 ### [Math Class](https://www.geeksforgeeks.org/java-lang-math-class-in-java-set-1/)
 
