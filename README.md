@@ -32,7 +32,7 @@ Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 | 15  | `String String.valueOf(int value)`                      | converts the given type into string. It is an overloaded method.             |
 
 ---------------------------------------------------
-###[Buffer String]()
+### [Buffer String]()
 The java.lang.StringBuffer class is a thread-safe, mutable sequence of characters. 
 ```java 
   StringBuffer s=new StringBuffer();
