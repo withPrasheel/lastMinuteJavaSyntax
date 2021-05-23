@@ -32,6 +32,19 @@ Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
 | 15  | `String String.valueOf(int value)`                      | converts the given type into string. It is an overloaded method.             |
 
 ---------------------------------------------------
+###[Buffer String]()
+The java.lang.StringBuffer class is a thread-safe, mutable sequence of characters. 
+```java 
+  StringBuffer s=new StringBuffer();
+  StringBuffer s= new StringBuffer(20);
+  StringBuffer s= new StringBuffer("abc");
+```
+
+| No. | Methods                                                 | Description                                                                  |
+| --- | ------------------------------------------------------- | ---------------------------------------------------------------------------- |
+|  1  |  `int s.length()`                                       | return the length of the string i.e. total number of characters.             |
+|  2  |  `int s.capacity()`                                     | return the current allocated capacity for a string.                          | 
+|  3  |  ``
 
 ### [Math Class](https://www.geeksforgeeks.org/java-lang-math-class-in-java-set-1/)
 
