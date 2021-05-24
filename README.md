@@ -52,6 +52,8 @@ The java.lang.StringBuffer class is a thread-safe, mutable sequence of character
 |  8  |  `char s.charAt(int index)`                             | used to return the character at the specified position.                      | 
 |  9  | `String s.substring(int beginIndex)`                    | used to return the substring from the specified beginIndex.                  | 
 |  10 | `String s.substring(int beginIndex, int endIndex)`      | used to return the substring from the specified beginIndex(inclusive) and endIndex(exclusive). |
+|  11 | `void s.setCharAt(int index, char ch)`                  | method sets the character at the specified index to ch.   |
+
 
 ### [Math Class](https://www.geeksforgeeks.org/java-lang-math-class-in-java-set-1/)
 
