@@ -272,9 +272,9 @@ Map<K,V> map = new TreeMap<K,V>();
 
 Map.Entry 
 ```java
-for(Map.Entry<Integer, Integer> map : counts.entrySet()) { 
-    entry.getValue(); 
-    entry.getKey();
+for (Map.Entry<String,String> entry : gfg.entrySet())
+            System.out.println("Key = " + entry.getKey() +
+                             ", Value = " + entry.getValue());
 }
 ```
 
