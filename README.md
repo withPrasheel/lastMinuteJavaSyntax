@@ -347,8 +347,8 @@ PriorityQueue<Integer> queue = new PriorityQueue<>(size, Collections.reverseOrde
 |     | `boolean q.offer(object)` | O(1) | O(log n) | This method is used to insert an element in the queue. This method is preferable to add() method since this method does not throws an exception when the capacity of the container is full since it returns false. |
 | 2   | `Object q.peek()`         | O(1) | O(1) | This method is used to view the head(first in) of queue without removing it. It returns Null if the queue is empty.                                                                                                |
 |     | `Object q.element()`      | O(1) | O(1) | This method is similar to peek(). It throws NoSuchElementException when the queue is empty.                                                                                                                        |
-| 3   | `Object q.remove()`        | O(1) | O(n)  |  This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
-|     | `Object q.poll()`          | O(1) | O(n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
+| 3   | `Object q.remove()`        | O(1) | O(log n)  |  This method removes and returns the head of the queue. It throws NoSuchElementException when the queue is empty.                                                                                                   |
+|     | `Object q.poll()`          | O(1) | O(log n) | This method removes and returns the head of the queue. It returns null if the queue is empty.                                                                                                                      |
 
 ### Stack
 In Java, Stack is a class that falls under the Collection framework that extends the Vector class. It also implements interfaces List, Collection, Iterable, Cloneable, Serializable.
