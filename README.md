@@ -288,7 +288,7 @@ TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
    ---------------------------
    
 ### [Set](https://www.geeksforgeeks.org/set-in-java/)
-Since Queue is an interface, objects cannot be created of the type queue. We always need a class which extends this list in order to create an object.
+Since Set is an interface, objects cannot be created of the type Set. We always need a class which extends this list in order to create an object.
 
 Syntax
 ```java
