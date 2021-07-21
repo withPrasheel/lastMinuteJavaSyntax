@@ -78,6 +78,12 @@ If the return type is of the type same as an argument then we are using _var_
 | 15  | `double sinh/tanh/cosh(double x) `                              | return the trigonometric Hyperbolic value.                                                                     |
 
 ------------------------------------------------------------------------------
+### [Random](https://www.youtube.com/watch?v=VMZLPl16P5c)
+````java
+Random r = new Random(n)    
+r.nextInt(n)      // Will generate values b/w 0 to n-1
+````
+
 ### [Integer Class](https://www.geeksforgeeks.org/java-lang-integer-class-java/)
 
 | No. | Methods                                                                       | Description                                                                                                                                                |
