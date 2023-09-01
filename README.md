@@ -139,7 +139,8 @@ Collection<E> Q = new "some type"<E>();
 | 12  | `int P.size()`                       | This method is used to return the number of elements in the collection.                                                                                                                                                  |
 | 13  | `Object[] objects = P.toArray();`    | This method is used to return an array containing all of the elements in this collection. toArray() method returns an array of type Object(Object[]). We need to typecast it to Integer before using as Integer objects. |
 
-| 14  | `Arrays.sort(intervals,(a,b)->a[0]-b[0]);`                       | Sort an array with comparator |
+| 14  | `Arrays.sort(intervals,(a,b)->a[0]-b[0]);` | Sort an array with comparator. 
+                                                                      |
 
 ---------------------------------------------------------
 
