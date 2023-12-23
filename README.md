@@ -108,7 +108,8 @@ r.nextInt(n)      // Will generate values b/w 0 to n-1
 |     | `String Integer.toString(int i, int radix)`                                   | returns a string representation of the int type argument in the specified radix.(First int to radix conversion)                                            |
 | 12  | `Integer Integer.valueOf(int i)`                                              | returns the relevant Integer Object holding the value of the argument passed.                                                                              |
 |     | `Integer Integer.valueOf(String s)`                                           | returns the relevant Integer Object holding the value of the argument passed.                                                                              |
-|     | `Integer Integer.valueOf(String s, int radix)`                                | convert to int and chnages be base from radix to 10.                                                                                                       |
+|     | `Integer Integer.valueOf(String s, int radix)`                                | convert to int and changes be base from radix to 10.                                                                                                       |
+| 13  | `String Integer.toBinaryString(int val);`                                | convert to int to binary string.                                                                                                       |
 
 \*valueOf is present in both Integer and String, Integer.valueOf() give Integer and String.valueOf() gives String
 
