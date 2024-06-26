@@ -142,6 +142,7 @@ Collection<E> Q = new "some type"<E>();
 
 | 14  | `Arrays.sort(intervals,(a,b)->a[0]-b[0]);`   | Sort an array with comparator. 
                                                                       |
+| 15  | `void Arrays.fill(int[] ar, val);            | fill the 1D array with val variable |
 
 ---------------------------------------------------------
 
