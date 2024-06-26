@@ -138,11 +138,9 @@ Collection<E> Q = new "some type"<E>();
 | 10  | `E P.remove(Object o)`               | This method is used to remove the given object from the collection. If there are duplicate values, then this method removes the first occurrence of the object.                                                          |
 | 11  | `E P.removeAll(Q)`                   | This method is used to remove all the objects mentioned in the given collection from the collection.                                                                                                                     |
 | 12  | `int P.size()`                       | This method is used to return the number of elements in the collection.                                                                                                                                                  |
-| 13  | `Object[] objects = P.toArray();`    | This method is used to return an array containing all of the elements in this collection. toArray() method returns an array of type Object(Object[]). We need to typecast it to Integer before using as Integer objects. |
-
-| 14  | `Arrays.sort(intervals,(a,b)->a[0]-b[0]);`   | Sort an array with comparator. 
-                                                                      |
-| 15  | `void Arrays.fill(int[] ar, val);            | fill the 1D array with val variable |
+| 13  | `Object[] objects = P.toArray();`    | This method is used to return an array containing all of the elements in this collection. toArray() method returns an array of type Object(Object[]). We need to typecast it to Integer before using as Integer objects.  |
+| 14  | `Arrays.sort(intervals,(a,b)->a[0]-b[0]);`   | Sort an array with comparator. |
+| 15  | `void Arrays.fill(int[] ar, val);`            | fill the 1D array with val variable |
 
 ---------------------------------------------------------
 
