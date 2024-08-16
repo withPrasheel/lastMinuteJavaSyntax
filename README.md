@@ -117,7 +117,7 @@ r.nextInt(n)      // Will generate values b/w 0 to n-1
 
 ### Collections
 
-![Alt text](./Java-Collections-Hierarchy.png "Title")
+![Alt text](./resources/Java-Collections-Hierarchy.png "Title")
 
 ```java
 Collection<E> P = new "some type"<E>();
@@ -255,7 +255,7 @@ ListIterator li = list.listIterator();
 
 ### [Map](https://www.geeksforgeeks.org/map-interface-java-examples/)
 
-![Alt text](./java-map-hierarchy.png "Title")
+![Alt text](./resources/java-map-hierarchy.png "Title")
 
 ```java
 Map<K,V> m=new HashMap<K,V>();
