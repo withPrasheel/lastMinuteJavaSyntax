@@ -376,6 +376,40 @@ In Java, Stack is a class that falls under the Collection framework that extends
 ---
 
 ## Streams 
+```
+List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+Stream<String> nameStream = names.stream();
+
+String[] colors = {"Red", "Green", "Blue"};
+Stream<String> colorStream = Arrays.stream(colors);
+
+Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
+```
+### Intermediate Operations
+| No. | Methods                   | Description      |
+| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| 1 | .map  | map() produces a new stream after applying a function to each element of the original stream. The new stream could be of different type. | 
+| 2 | .filter(Predicate) | |
+| 3 | .map(Function) | |
+| 4 | .distinct() | |
+| 5 | .sorted() | |
+| 6 | .limit(n) | |
+
+
+### Terminal Operations
+| No. | Methods                   | Description      |
+| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| 1 | .forEach(e -> e.operation(10.0)) | Filters elements based on a condition. |
+| 2 | .collect(Collector) | |
+| 3 | .count() | |
+| 4 | .anyMatch(Predicate) | |
+| 5 | .allMatch(Predicate) | |
+| 6 | .findAny() | |
+| 7 | .reduce() | |
+
+
+---
+
 
 
 ### Cool Resources
