@@ -375,7 +375,7 @@ In Java, Stack is a class that falls under the Collection framework that extends
 
 ---
 
-## [Streams](https://stackify.com/streams-guide-java-8/)
+## [Streams](https://stackify.com/streams-guide-java-8/)  [](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
 ```
 List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
 Stream<String> nameStream = names.stream();
