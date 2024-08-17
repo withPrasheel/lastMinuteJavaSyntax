@@ -278,6 +278,7 @@ Map<K,V> map = new TreeMap<K,V>();
 | 9   | `V m.get(Object key)`                        | This method returns the object that contains the value associated with the key else returns null      |
 | 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
 | 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
+| 12  | `map.forEach((key, value) -> System.out.println(key + ": " + value));`                               | Traverse through the values in a map                                        |
 
 Map.Entry 
 ```java
@@ -371,6 +372,10 @@ In Java, Stack is a class that falls under the Collection framework that extends
 | 3  | `E stk.pop()`  |    |    The method removes an element from the top of the stack and returns the same element as the value of that function. |
 | 4  | `E stk.peek()` |   | The method looks at the top element of the stack without removing it. |
 | 5  | `int stk.search(Object o)` |  | The method searches the specified object and returns the position of the object. |
+
+---
+
+## Streams 
 
 
 ### Cool Resources
