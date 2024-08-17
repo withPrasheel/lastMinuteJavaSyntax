@@ -387,25 +387,28 @@ Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
 ```
 ### Intermediate Operations
 | No. | Methods                   | Description      |
-| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| --- | ------------------------- | ---------------  |
 | 1 | .map  | map() produces a new stream after applying a function to each element of the original stream. The new stream could be of different type. | 
-| 2 | .filter(Predicate) | |
+| 2 | .filter(Predicate) | this produces a new stream that contains elements of the original stream that pass a given test (specified by a Predicate). |
 | 3 | .map(Function) | |
 | 4 | .distinct() | |
 | 5 | .sorted() | |
 | 6 | .limit(n) | |
+| 7 | .peek()   | same as forEach function in terminal operations, instead its a intermediate operation. |
+| 8 | .distinct()| does not take any argument and returns the distinct elements in the stream, eliminating duplicates. It uses the equals() method of the elements to decide whether two elements are equal or not. |
 
 
 ### Terminal Operations
 | No. | Methods                   | Description      |
-| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| --- | ------------------------- | ---  |
 | 1 | .forEach(e -> e.operation(10.0)) | Filters elements based on a condition. |
-| 2 | .collect(Collector) | |
-| 3 | .count() | |
-| 4 | .anyMatch(Predicate) | |
-| 5 | .allMatch(Predicate) | |
-| 6 | .findAny() | |
-| 7 | .reduce() | |
+| 2 | .collect(Collector.toList()) | performs mutable fold operations (repackaging elements to some data structures and applying some additional logic, concatenating them, etc.) on data elements held in the Stream instance. |
+| 3 | .count() | Counts the number of entries in the stream. |
+| 4 | .anyMatch(Predicate) | checks if the predicate is true for all the elements in the stream. Here, it returns false as soon as it encounters 5, which is not divisible by 2. |
+|  | .allMatch(Predicate) | checks if the predicate is true for any one element in the stream. Here, again short-circuiting is applied and true is returned immediately after the first element. |
+|  | .noneMatch(i -> i % 2 == 0) | checks if there are no elements matching the predicate. Here, it simply returns false as soon as it encounters 6, which is divisible by 3 |
+| 5 | .findAny() | |
+| 6 | .reduce() | |
 
 
 ---
