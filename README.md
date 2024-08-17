@@ -278,9 +278,7 @@ Map<K,V> map = new TreeMap<K,V>();
 | 9   | `V m.get(Object key)`                        | This method returns the object that contains the value associated with the key else returns null      |
 | 10  | `boolean m.isEmpty()`                        | This method returns true if the map is empty; returns false if it contains at least one key.          |
 | 11  | `int m.size()`                               | This method returns the number of entries in the map.                                                 |
-| 12  | `map.forEach((key, value) -> {
-            map.put(key,value+2);
-            });`                               | Traverse through the values in a map                                        |
+| 12  | `map.forEach((key, value) -> {map.put(key,value+2);});`                               | Traverse through the values in a map                                        |
 
 Map.Entry 
 ```java
