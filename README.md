@@ -375,7 +375,7 @@ In Java, Stack is a class that falls under the Collection framework that extends
 
 ---
 
-## Streams 
+## [Streams](https://stackify.com/streams-guide-java-8/)
 ```
 List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
 Stream<String> nameStream = names.stream();
@@ -392,8 +392,11 @@ Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
 | 2 | .filter(Predicate) | this produces a new stream that contains elements of the original stream that pass a given test (specified by a Predicate). |
 | 3 | .distinct() | does not take any argument and returns the distinct elements in the stream, eliminating duplicates. It uses the equals() method of the elements to decide whether two elements are equal or not. |
 | 4 | .sorted((e1, e2) -> e1.getName().compareTo(e2.getName())) |  this sorts the stream elements based on the comparator passed we pass into it. |
-| 5 | .limit(n) | |
+| 5 | .limit(n) | limit the number of elements in the output for n |
+| 6 | .skip(n) | skip the first n elements of the list |
 | 6 | .peek()   | same as forEach function in terminal operations, instead its a intermediate operation. |
+| 7 | .min() .max(Comparator.comparing(Employee::getSalary)) | min() and max() return the minimum and maximum element in the stream respectively, based on a comparator. They return an Optional since a result may or may not exist (due to, say, filtering) |
+
 
 
 ### Terminal Operations
@@ -406,7 +409,7 @@ Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
 |  | .allMatch(Predicate) | checks if the predicate is true for any one element in the stream. Here, again short-circuiting is applied and true is returned immediately after the first element. |
 |  | .noneMatch(i -> i % 2 == 0) | checks if there are no elements matching the predicate. Here, it simply returns false as soon as it encounters 6, which is divisible by 3 |
 | 5 | .findAny() | |
-| 6 | .reduce() | |
+| 6 | .reduce() |  takes a sequence of input elements and combines them into a single summary result by repeated application of a combining operation |
 
 
 ---
