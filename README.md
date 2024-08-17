@@ -375,7 +375,7 @@ In Java, Stack is a class that falls under the Collection framework that extends
 
 ---
 
-## Streams 
+## [Streams](https://stackify.com/streams-guide-java-8/)  [](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html)
 ```
 List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
 Stream<String> nameStream = names.stream();
@@ -387,28 +387,70 @@ Stream<Integer> numbers = Stream.of(1, 2, 3, 4, 5);
 ```
 ### Intermediate Operations
 | No. | Methods                   | Description      |
-| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
-| 1 | .map  | map() produces a new stream after applying a function to each element of the original stream. The new stream could be of different type. | 
-| 2 | .filter(Predicate) | |
-| 3 | .map(Function) | |
-| 4 | .distinct() | |
-| 5 | .sorted() | |
-| 6 | .limit(n) | |
+| --- | ------------------------- | ---------------  |
+| 1 | .map(value -> value + 4  | map() produces a new stream after applying a function to each element of the original stream. The new stream could be of different type. | 
+| 2 | .filter(Predicate) | this produces a new stream that contains elements of the original stream that pass a given test (specified by a Predicate). |
+| 3 | .distinct() | does not take any argument and returns the distinct elements in the stream, eliminating duplicates. It uses the equals() method of the elements to decide whether two elements are equal or not. |
+| 4 | .sorted((e1, e2) -> e1.getName().compareTo(e2.getName())) |  this sorts the stream elements based on the comparator passed we pass into it. |
+| 5 | .limit(n) | limit the number of elements in the output for n |
+| 6 | .skip(n) | skip the first n elements of the list |
+| 6 | .peek()   | same as forEach function in terminal operations, instead its a intermediate operation. |
+| 7 | .min() .max(Comparator.comparing(Employee::getSalary)) | min() and max() return the minimum and maximum element in the stream respectively, based on a comparator. They return an Optional since a result may or may not exist (due to, say, filtering) |
+
 
 
 ### Terminal Operations
 | No. | Methods                   | Description      |
-| --- | ------------------------- | ---  |----------------------------------------------------------------------------------------------------------- |
+| --- | ------------------------- | ---  |
 | 1 | .forEach(e -> e.operation(10.0)) | Filters elements based on a condition. |
-| 2 | .collect(Collector) | |
-| 3 | .count() | |
-| 4 | .anyMatch(Predicate) | |
-| 5 | .allMatch(Predicate) | |
-| 6 | .findAny() | |
-| 7 | .reduce() | |
+| 2 | .collect(Collector.toList()) | performs mutable fold operations (repackaging elements to some data structures and applying some additional logic, concatenating them, etc.) on data elements held in the Stream instance. |
+| 3 | .count() | Counts the number of entries in the stream. |
+| 4 | .anyMatch(Predicate) | checks if the predicate is true for all the elements in the stream. Here, it returns false as soon as it encounters 5, which is not divisible by 2. |
+|  | .allMatch(Predicate) | checks if the predicate is true for any one element in the stream. Here, again short-circuiting is applied and true is returned immediately after the first element. |
+|  | .noneMatch(i -> i % 2 == 0) | checks if there are no elements matching the predicate. Here, it simply returns false as soon as it encounters 6, which is divisible by 3 |
+| 5 | .findAny() | |
+| 6 | .reduce() |  takes a sequence of input elements and combines them into a single summary result by repeated application of a combining operation |
 
 
 ---
+
+## Comparators 
+### 1. `naturalOrder()`
+- Returns a comparator that compares `Comparable` objects in their natural order (ascending order).
+- **Example**: `Comparator<Integer> naturalOrderComparator = Comparator.naturalOrder();`
+
+### 2. `reverseOrder()`
+- Returns a comparator that compares `Comparable` objects in reverse of their natural order (descending order).
+- **Example**: `Comparator<Integer> reverseOrderComparator = Comparator.reverseOrder();`
+
+### 3. `nullsFirst(Comparator<? super T> comparator)`
+- Returns a comparator that considers `null` to be less than non-null. If both objects are non-null, it uses the provided comparator.
+- **Example**: `Comparator<String> nullsFirstComparator = Comparator.nullsFirst(Comparator.naturalOrder());`
+
+### 4. `nullsLast(Comparator<? super T> comparator)`
+- Returns a comparator that considers `null` to be greater than non-null. If both objects are non-null, it uses the provided comparator.
+- **Example**: `Comparator<String> nullsLastComparator = Comparator.nullsLast(Comparator.naturalOrder());`
+
+### 5. `comparing(Function<? super T, ? extends U> keyExtractor)`
+- Returns a comparator that compares objects based on the result of the function applied to each object (key extractor).
+- **Example**: `Comparator<Person> byNameComparator = Comparator.comparing(Person::getName);`
+- **Explanation**: Compares `Person` objects by their `name` attribute.
+
+### 6. `comparing(Function<? super T, ? extends U> keyExtractor, Comparator<? super U> keyComparator)`
+- Returns a comparator that compares objects based on the result of the key extractor function and orders them according to the provided comparator.
+- **Example**: `Comparator<Person> byNameDescending = Comparator.comparing(Person::getName, Comparator.reverseOrder());`
+- **Explanation**: Compares `Person` objects by their `name` attribute in descending order.
+
+### 7. `comparingInt(ToIntFunction<? super T> keyExtractor)`
+- Returns a comparator that compares objects based on an integer key extracted from each object.
+- **Example**: `Comparator<Person> byAgeComparator = Comparator.comparingInt(Person::getAge);`
+- **Explanation**: Compares `Person` objects by their `age` attribute.
+
+### 8. `comparingLong(ToLongFunction<? super T> keyExtractor)`
+- Returns a comparator that compares objects based on a long key extracted from each object.
+- **Example**: `Comparator<Person> bySalaryComparator = Comparator.comparingLong(Person::getSalary);`
+- **Explanation**: Compares `Person` objects by their `salary` attribute.
+
 
 
 
