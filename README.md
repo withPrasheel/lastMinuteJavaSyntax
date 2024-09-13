@@ -3,6 +3,21 @@
 ## Important Syntax in java
 Most of the sites these days allow 10^8 operations per second
 
+### Basic
+Switch case
+```
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+```
+
 ### [String Class](https://www.geeksforgeeks.org/string-class-in-java/)
 
 Syntax - Taking s1 if one String and (s1,s2) if two strings are required.
