@@ -244,7 +244,9 @@ E: data type
 | 8  | `E x.peek()`                                   | retrieves the first element of a list                                                                                                                               |
 |     | `E x.poll()`                                   | It retrieves and removes the first element of a list.                                                                                                               |
 | 9  | `int x.size()`                                 | used to return the number of elements in a list.                                                                                                                    |                                                                             |
-| 10  | `E x.remove()`                        | used to remove the head of queuee.                                                                                                     |
+| 10  | `E x.remove()`                        | used to remove the head of queuee.   |
+| 11  | `E x.removeFirst()`  |	Removes and returns the first element of the deque. Throws an exception if the deque is empty. | 
+| 12	| `E x.removeLast()` |	Removes and returns the last element of the deque. Throws an exception if the deque is empty. |
 
 pollFirst, pollLast, offerFirst, offerLast, peekFirst, peekLast, removeFirst, removeLast, removeFirstOccurance, removeLastOccurance
 ### ListItrator
