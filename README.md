@@ -335,10 +335,9 @@ Syntax
     
 Itrator Syntax: 
 ```java
- Iterator<String> itr=set.iterator();  
-  while(itr.hasNext()){  
-   System.out.println(itr.next());  
-  }  
+1	for (E element : set) { ... }	- Uses an enhanced for loop to iterate through each element in the set.
+2	Iterator<E> iterator = set.iterator(); while (iterator.hasNext()) { E element = iterator.next(); }	- Uses an Iterator to traverse the set, allowing element removal during iteration.
+3	set.forEach(e -> { ... });	- Uses the forEach method with a lambda expression for iteration.
 ```
 Set                   |    Add   |  Remove  | Contains |   Next   | Size | Data Structure
 ----------------------|----------|----------|----------|----------|------|-------------------------
