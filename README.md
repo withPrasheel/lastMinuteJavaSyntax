@@ -303,6 +303,11 @@ for (Map.Entry<String,String> entry : gfg.entrySet())
             System.out.println("Key = " + entry.getKey() +
                              ", Value = " + entry.getValue());
 }
+
+1	for (Map.Entry<K, V> entry : map.entrySet()) { ... }	Iterates through the key-value pairs using entrySet().
+2	for (K key : map.keySet()) { ... }	Iterates through only the keys using keySet().
+3	for (V value : map.values()) { ... }	Iterates through only the values using values().
+4	map.forEach((key, value) -> { ... });	Uses the forEach method with a lambda expression.
 ```
 
 |    Map                   |   Get    | ContainsKey |   Next   | Data Structure
