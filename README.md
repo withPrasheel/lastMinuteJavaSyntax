@@ -318,6 +318,69 @@ EnumMap               | O(1)     |   O(1)      | O(1)     | Array
 TreeMap               | O(log n) |   O(log n)  | O(log n) | Red-black tree
    
    ---------------------------
+
+   Here's a new section you can add to your `#lastMinuteJavaSyntax` cheat sheet for **TreeMap in Java**, including syntax, important methods, and complexity:
+
+---
+
+### [TreeMap](https://www.geeksforgeeks.org/treemap-in-java/)
+
+A `TreeMap` in Java is a `Map` implementation that keeps its keys **sorted in natural order** or by a custom comparator. Internally, it uses a **Red-Black Tree**.
+
+```java
+Map<K, V> map = new TreeMap<>();
+TreeMap<Integer, String> tm = new TreeMap<>();
+TreeMap<Integer, String> tm = new TreeMap<>(Collections.reverseOrder()); // custom comparator
+```
+
+#### Key Properties
+
+* Sorted based on keys (not insertion order).
+* Logarithmic time complexity: **O(log n)** for `put`, `get`, `remove`.
+
+---
+
+| No. | Methods                               | Description                                                                                      |
+| --- | ------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 1   | `V get(Object key)`                   | Returns the value associated with the specified key.                                             |
+| 2   | `V put(K key, V value)`               | Inserts or updates the key-value pair.                                                           |
+| 3   | `V remove(Object key)`                | Removes the mapping for this key if present.                                                     |
+| 4   | `boolean containsKey(Object key)`     | Returns true if the map contains a mapping for the specified key.                                |
+| 5   | `boolean containsValue(Object val)`   | Returns true if the map maps one or more keys to the specified value.                            |
+| 6   | `K firstKey()`                        | Returns the **lowest** key currently in this map.                                                |
+| 7   | `K lastKey()`                         | Returns the **highest** key currently in this map.                                               |
+| 8   | `Map.Entry<K,V> firstEntry()`         | Returns a key-value mapping associated with the lowest key.                                      |
+| 9   | `Map.Entry<K,V> lastEntry()`          | Returns a key-value mapping associated with the highest key.                                     |
+| 10  | `Map.Entry<K,V> higherEntry(K key)`   | Returns the least entry **strictly greater** than the given key.                                 |
+| 11  | `Map.Entry<K,V> lowerEntry(K key)`    | Returns the greatest entry **strictly less** than the given key.                                 |
+| 12  | `Map.Entry<K,V> floorEntry(K key)`    | Returns the greatest entry **less than or equal** to the given key.                              |
+| 13  | `Map.Entry<K,V> ceilingEntry(K key)`  | Returns the least entry **greater than or equal** to the given key.                              |
+| 14  | `SortedMap<K,V> subMap(K from, K to)` | Returns a view of the portion of this map from `fromKey` (inclusive) to `toKey` (exclusive).     |
+| 15  | `SortedMap<K,V> headMap(K toKey)`     | Returns a view of the portion of this map whose keys are **strictly less** than `toKey`.         |
+| 16  | `SortedMap<K,V> tailMap(K fromKey)`   | Returns a view of the portion of this map whose keys are **greater than or equal** to `fromKey`. |
+| 17  | `Set<K> keySet()`                     | Returns a set view of the keys contained in this map.                                            |
+| 18  | `Collection<V> values()`              | Returns a collection view of the values contained in this map.                                   |
+| 19  | `Set<Map.Entry<K,V>> entrySet()`      | Returns a set view of the key-value mappings.                                                    |
+
+---
+
+#### Example:
+
+```java
+TreeMap<Integer, String> tm = new TreeMap<>();
+tm.put(3, "Three");
+tm.put(1, "One");
+tm.put(2, "Two");
+
+System.out.println(tm); // Output: {1=One, 2=Two, 3=Three}
+System.out.println(tm.higherKey(2)); // Output: 3
+System.out.println(tm.firstEntry().getValue()); // Output: One
+```
+
+---
+
+Let me know if you want a version comparing `TreeMap` vs `HashMap` in a table!
+----------------------------------
    
 ### [Set](https://www.geeksforgeeks.org/set-in-java/)
 Since Set is an interface, objects cannot be created of the type Set. We always need a class which extends this list in order to create an object.
